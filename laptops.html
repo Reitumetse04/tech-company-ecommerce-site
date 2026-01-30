@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops | Varsity Store</title>
+
+  <link rel="stylesheet" href="laptops.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar (reuse your shared one) -->
+  <header class="navbar">
+    <div class="logo-text">Varsity Store</div>
+    <nav>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        
+      </ul>
+    </nav>
+
+    <!-- Right Side Icons -->
+    <div class="nav-icons">
+      <!-- Search -->
+      <button class="icon-btn" aria-label="Search">
+        <i class="fas fa-search"></i>
+      </button>
+      <!-- Bag -->
+      <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+        <div class="cart-icon-wrapper">
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+      </a>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero-small">
+    <h1>Laptops</h1>
+    <p>Discover powerful laptops designed for work, study, and play, performance, style, and reliability all in one
+      device. We offer Lay-buy for up to 4-months Plus Free 24Hours customer support to help you set-up and navigate
+    through your new device.</p>
+  </section>
+
+  <!-- Laptops Grid -->
+  <main class="laptop-grid">
+
+    <!-- Laptop 1 -->
+    <div class="laptop-card">
+      <img src="images/mecer-wizard-1.png" alt="Mecer Wizard Z140C-Xpress-F2" class="laptop-img"
+        data-images="images/mecer-wizard-1.png,images/mecer-wizard-2.png,images/mecer-wizard-3.png">
+      <h3>Mecer Wizard Z140C-Xpress-F2</h3>
+      <p>Display: 14”</p>
+      <p>CPU: Intel Celeron N4020</p>
+      <p>DDR-4 4GB RAM</p>
+      <p>128GB SSD</p>
+      <span class="price">R3 800</span>
+      <button class="btn add-to-cart-btn" data-name="Mecer Wizard Z140C-Xpress-F2" data-price="3800"
+        data-image="images/mecer-wizard-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 2 -->
+    <div class="laptop-card">
+      <img src="images/mecer-move-1.png" alt="Mecer Move N4120" class="laptop-img"
+        data-images="images/mecer-move-1.png,images/mecer-move-2.png,images/mecer-move-3.png">
+      <h3>Mecer Move N4120</h3>
+      <p>Display: 13.3”</p>
+      <p>CPU: Intel Celeron N4120</p>
+      <p>DDR-4 4GB RAM</p>
+      <p>128GB SSD • Touch pen • Laptop bag</p>
+      <span class="price">R3 800</span>
+      <button class="btn add-to-cart-btn" data-name="Mecer Move N4120" data-price="3800"
+        data-image="images/mecer-move-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 3 -->
+    <div class="laptop-card">
+      <img src="images/mecer-my-life-1.png" alt="Mecer MyLife Z140C" class="laptop-img"
+        data-images="images/mecer-my-life-1.png,images/mecer-my-life-2.png,images/mecer-my-life-3.png">
+      <h3>Mecer MyLife Z140C</h3>
+      <p>Display: 14”</p>
+      <p>CPU: Intel Celeron Z140C</p>
+      <p>DDR-4 4GB RAM</p>
+      <p>Storage: 500GB HDD • Refurbished ✅</p>
+      <span class="price">R3 800</span>
+      <button class="btn add-to-cart-btn" data-name="Mecer MyLife Z140C" data-price="3800"
+        data-image="images/mecer-my-life-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 4 -->
+    <div class="laptop-card">
+      <img src="images/HP-1.png" alt="HP Elitebook 840 G9" class="laptop-img"
+        data-images="images/HP-1.png,images/HP-2.png,images/HP-3.png">
+      <h3>HP Elitebook 840 G9</h3>
+      <p>Display: 14”</p>
+      <p>CPU: Intel Core i5 1254</p>
+      <p>DDR-5 16GB RAM</p>
+      <p>512GB SSD</p>
+      <span class="price">R6 500</span>
+      <button class="btn add-to-cart-btn" data-name="HP Elitebook 840 G9" data-price="6500"
+        data-image="images/HP-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 5 -->
+    <div class="laptop-card">
+      <img src="images/macbook-retina-1.png" alt="MacBook Pro Retina 2015" class="laptop-img"
+        data-images="images/macbook-retina-1.png,images/macbook-retina-2.png,images/macbook-retina-3.png">
+      <h3>MacBook Pro Retina 2015</h3>
+      <p>Display: 15.4”</p>
+      <p>CPU: I7-4770HQ 3.40GHz</p>
+      <p>8GB RAM</p>
+      <p>Storage: 128GB SSD • Pre-owned ✅</p>
+      <span class="price">R5 500</span>
+      <button class="btn add-to-cart-btn" data-name="MacBook Pro Retina 2015" data-price="5500"
+        data-image="images/macbook-retina-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 6 -->
+    <div class="laptop-card">
+      <img src="images/macbook-pro-1.png" alt="MacBook Pro 2017" class="laptop-img"
+        data-images="images/macbook-pro-1.png,images/macbook-pro-2.png,images/macbook-pro-3.png">
+      <h3>MacBook Pro 2017</h3>
+      <p>Display: 15”</p>
+      <p>CPU: Intel Core i5 or i7</p>
+      <p>LPDDR-3 8GB RAM</p>
+      <p>Storage: 128GB SSD • Pre-owned ✅</p>
+      <span class="price">R6 800</span>
+      <button class="btn add-to-cart-btn" data-name="MacBook Pro 2017" data-price="6800"
+        data-image="images/macbook-pro-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 7 -->
+    <div class="laptop-card">
+      <img src="images/dell-1.png" alt="Dell Latitude E5440 i5 4th Gen" class="laptop-img"
+        data-images="images/dell-1.png,images/dell-2.png,images/dell-3.png">
+      <h3>Dell Latitude E5440 i5 4th Gen</h3>
+      <p>Display: 14.1”</p>
+      <p>CPU: Intel i5-5300U 2.30GHz</p>
+      <p>DDR-3 8GB RAM</p>
+      <p>Storage: 500GB HDD</p>
+      <span class="price">R5 000</span>
+      <button class="btn add-to-cart-btn" data-name="Dell Latitude E5440 i5 4th Gen" data-price="5000"
+        data-image="images/dell-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 8 -->
+    <div class="laptop-card">
+      <img src="images/proline-1.png" alt="Proline V114" class="laptop-img"
+        data-images="images/proline-1.png,images/proline-2.png,images/proline-3.png">
+      <h3>Proline V114</h3>
+      <p>Display: 14”</p>
+      <p>CPU: Intel Celeron</p>
+      <p>DDR-4 4GB RAM</p>
+      <p>128GB SSD</p>
+      <span class="price">R3 800</span>
+      <button class="btn add-to-cart-btn" data-name="Proline V114" data-price="3800" data-image="images/proline-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 9 -->
+    <div class="laptop-card">
+      <img src="images/proline-mini-1.png" alt="Proline mini PC V1165C4" class="laptop-img"
+        data-images="images/proline-mini-1.png,images/proline-mini-2.png,images/proline-mini-3.png">
+      <h3>Proline mini PC V1165C4</h3>
+      <p>Display: 11.6”</p>
+      <p>CPU: Intel Celeron</p>
+      <p>DDR-4 4GB RAM</p>
+      <p>500GB SSD</p>
+      <span class="price">R2 800</span>
+      <button class="btn add-to-cart-btn" data-name="Proline mini PC V1165C4" data-price="2800"
+        data-image="images/proline-mini-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 10 -->
+    <div class="laptop-card">
+      <img src="images/palbook-1.png" alt="Futuco Palbook" class="laptop-img"
+        data-images="images/palbook-1.png,images/palbook-2.png,images/palbook-3.png">
+      <h3>Futuco Palbook</h3>
+      <p>Display: 15.6” </p>
+      <p>CPU: Intel Processor N95</p>
+      <p>LPDDR-5 12gb RAM</p>
+      <p>256gb NVMe SSD</p>
+      <span class="price">R7 000</span>
+      <button class="btn add-to-cart-btn" data-name="Futuco Palbook" data-price="7000"
+        data-image="images/palbook-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 11 -->
+    <div class="laptop-card">
+      <img src="images/HP255-1.png" alt="HP 255 G6 AMD 7th Gen" class="laptop-img"
+        data-images="images/HP255-1.png,images/HP255-2.png,images/HP255-3.png">
+      <h3>HP 255 G6 AMD 7th Gen</h3>
+      <p>Display: 15.6” </p>
+      <p>CPU: 2.0GHz Processor</p>
+      <p>DDR-4 8gb RAM</p>
+      <p>256gb SSD</p>
+      <span class="price">R5 700</span>
+      <button class="btn add-to-cart-btn" data-name="HP 255 G6 AMD 7th Gen" data-price="5700"
+        data-image="images/HP255-1.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 12 -->
+    <div class="laptop-card">
+      <img src="images/lenovo thinkpad t15.png" alt="Lenovo Thinkpad T15" class="laptop-img"
+        data-images="images/lenovo thinkpad T15.png,images/HP255-2.png,images/HP255-3.png">
+      <h3>Lenovo Thinkpad T15</h3>
+      <p>Display: 15.6” </p>
+      <p>CPU: 2.30GHz Processor</p>
+      <p>DDR-4 16gb RAM</p>
+      <p>5126gb SSD</p>
+      <span class="price">R6 000</span>
+      <button class="btn add-to-cart-btn" data-name="Lenovo Thinkpad" data-price="6 000"
+        data-image="images/lenovo thinkpad t15.png">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Laptop 13 -->
+    <div class="laptop-card">
+      <img src="images/lenovo ideapad.png" alt="Lenovo ideapad" class="laptop-img"
+        data-images="images/lenovo ideapad.png,images/HP255-2.png,images/HP255-3.png">
+      <h3>Lenovo Ideapad 3</h3>
+      <p>Display: 15.6” </p>
+      <p>CPU: 2.0GHz Processor</p>
+      <p>DDR-4 8gb RAM</p>
+      <p>256gb SSD</p>
+      <span class="price">R5 000</span>
+      <button class="btn add-to-cart-btn" data-name="HP 255 G6 AMD 7th Gen" data-price="5 000"
+        data-image="images/lenovo ideapad.png">
+        Add to Cart
+      </button>
+    </div>
+
+
+<!-- Laptop 14 -->
+    <div class="laptop-card">
+      <img src="images/Asus zenbook.png" alt="Asus Zenbook 13" class="laptop-img"
+        data-images="images/Asus zenbook 13.png,images/HP255-2.png,images/HP255-3.png">
+      <h3>Asus Zenbook 13 UX331UA</h3>
+      <p>Display: 13.3” </p>
+      <p>Fingerprint, Backlit keyboard</p>
+      <p>DDR-4 8gb RAM</p>
+      <p>256gb SSD</p>
+      <span class="price">R6 000</span>
+      <button class="btn add-to-cart-btn" data-name="Asus Zenbook 13 UX331UA" data-price="6 000"
+        data-image="images/Asus zenbook.png">
+        Add to Cart
+      </button>
+    </div>
+
+    
+
+    <!-- Popup Notification -->
+    <div id="cart-popup" class="cart-popup hidden">
+      <p>Item added to your cart</p>
+      <div class="popup-product">
+        <img id="popup-img" src="" alt="">
+        <span id="popup-name"></span>
+      </div>
+      <div class="popup-actions">
+        <a href="cart.html" class="btn view-cart-btn">View Cart</a>
+        <button class="btn continue-btn" onclick="closePopup()">Continue Shopping</button>
+      </div>
+    </div>
+
+
+
+  </main>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Varsity Store Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="laptop.js"></script>
+
+
+</body>
+
+</html>

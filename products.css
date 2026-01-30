@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-dark: #121212;
+  --text-light: #e0e0e0;
+  --accent-gold: #d4af37;
+  --card-glass: rgba(255,255,255,0.05);
+  --white: #ffffff;
+}
+
+
+
+/* Body */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300; /* Slimmer weight */
+  line-height: 1.6;
+}
+
+
+
+/* Hero */
+.hero {
+  background: var(--bg-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 60px 20px; /* reduced height */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px; /* bigger, bolder */
+  font-weight: 600;
+  letter-spacing: -1px; /* gives that Apple sleek look */
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+
+/* Supplies Grid */
+.supplies-grid {
+  display: grid;
+  gap: 25px; /* slightly more space between cards */
+  padding: 50px 20px; /* increase top/bottom padding */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Card Styles */
+.supply-card {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* more spacing between image and text */
+  background: var(--card-glass);
+  padding: 30px; /* larger card padding */
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.supply-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Product Images */
+.supply-img {
+  width: 80px; /* larger image size */
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.supply-card:hover .supply-img {
+  transform: scale(1.05); /* subtle zoom on hover */
+}
+
+/* Text Styles */
+.supply-card h2 {
+  font-size: 22px; /* slightly bigger heading */
+  margin-bottom: 6px;
+  color: var(--accent-gold);
+  font-weight: 400;
+}
+
+.supply-card p {
+  font-size: 16px; /* slightly bigger paragraph */
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* Make the entire supply card clickable without link styling */
+.supply-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* makes the <a> fill around the card */
+}
+
+.supply-card-link:hover .supply-card {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5); /* consistent hover effect */
+}
+
+
+
+/* Footer */
+footer {
+  background: #0d0d0d;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px; /* Slim like Apple */
+  background-color: var(--bg-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white); /* fixed */
+  letter-spacing: 0.5px;
+}
+
+/* Center nav */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--accent-gold); /* fixed */
+}
+
+/* Icons (right side) */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-light);
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.icon-btn:hover {
+  color: var(--accent-gold); /* fixed */
+}
+
+/* Hamburger */
+.hamburger {
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Show only on mobile */
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;  /* height of your navbar */
+    right: 20px; /* align with hamburger */
+    background-color: var(--bg-dark);
+    padding: 15px 20px;
+    border-radius: 6px;
+    text-align: left; /* links aligned left inside menu */
+    z-index: 1000;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/*CART CSS*/
+/* Cart Page */
+
+.cart-hero {
+  background: var(--bg-dark);
+  padding: 30px 10px; /* smaller height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-hero-logo {
+  max-width: 140px; /* logo size */
+  height: auto;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.cart-empty h2 {
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif; /* clean, modern font */
+  color: #000; /* black */
+  margin-bottom: 15px;
+}
+
+.cart-empty h2 {
+  font-size: 26px;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.cart-empty p {
+  font-size: 16px;
+  color: #f8f7f7; /* softer gray text */
+  margin-bottom: 25px;
+}
+
+/* Continue Shopping Button */
+.btn-continue {
+  display: inline-block;
+  background: #000; /* solid black */
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 0; /* sharp rectangle */
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-continue:hover {
+  background: #222; /* slightly lighter black */
+}

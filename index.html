@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varsity Store Technologies</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Glide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <!-- Logo -->
+        <div class="logo-text">Varsity Store</div>
+
+        <!-- Centered Nav Links -->
+        <nav>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                
+            </ul>
+        </nav>
+
+        <!-- Right Side Icons -->
+        <div class="nav-icons">
+            <!-- Search -->
+            <button class="icon-btn" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+            <!-- Bag -->
+            <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+                <div class="cart-icon-wrapper">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </a>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="images/logo.png" alt="Varsity Store Logo" class="center-logo" />
+        <a href="#services" class="btn cta-btn">Shop With Us</a>
+        <br />
+        <h1 class="slogan">ROMANTICIZING YOUR LIFE THROUGH TECH</h1>
+
+
+
+    </section>
+
+    <!-- Featured Product -->
+    <!-- iPhone Highlight Section -->
+    <section class="iphone-highlight">
+        <!-- Shimmer overlay -->
+        <div class="highlight-shimmer"></div>
+
+        <div class="highlight-image">
+            <img src="images/iphone-display.png" alt="iPhone Sale">
+        </div>
+
+        <div class="highlight-content">
+            <h2>20% Off All iPhones</h2>
+            <p>For the entire month of December, enjoy exclusive savings on all iPhone models. Luxury meets innovation
+                this is your chance to upgrade.</p>
+            <a href="iphones.html" class="highlight-btn">Buy Now</a>
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+
+
+            <a href="products.html" class="service-card">
+                <img src="images/IT-supplies.jpeg" alt="ICT Supplies" class="service-img" />
+                <h4>ICT Supplies</h4>
+                <p>iPhones, Laptops, Electronics, Peripherals & Parts.</p>
+            </a>
+
+            <a href="support.html" class="service-card">
+                <img src="images/IT-solutions.jpeg" alt="IT Solutions" class="service-img" />
+                <h4>IT Solutions</h4>
+                <p>IT Support, Web hosting, Server & Computer Management, Web Development, Repairs & Upgrades.</p>
+            </a>
+
+            <a href="cyber.html" class="service-card">
+                <img src="images/cybersecurity.jpeg" alt="Cybersecurity & Networking" class="service-img" />
+                <h4>Basic Cybersecurity Services</h4>
+                <p>Incident Response, Cloud Security, Data Encryption & Recovery, Risk Assessment, Security Awareness
+                    Training & Network Security.</p>
+            </a>
+
+           
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            Founded in 2024 by <strong>Jabulani Bakane (CEO) </strong>during his final year at University, Varsity Store
+            technologies
+            aims to mitigate the gap between reliability, efficiency and affordability within the ICT supplies & IT
+            solutions industry.
+        </p>
+        <h3>Our Mission</h3>
+        <p>We exist to mitigate the gap between reliability, efficiency and affordability within the ICT supplies
+            and IT Solutions industry at the same time romanticising your life through tech.</p>
+        <h3>Our Vision</h3>
+        <p>To provide our customers with aesthetically pleasant and high quality products or services that meets
+            their tailored needs, going beyond than just business transactions to establishing long term relationships.
+        </p>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Clients Say</h2>
+
+        <div class="glide testimonial-slider">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide testimonial-card">
+                        <p>"We were out of stock for a particular type of laptops and I contacted Jabulani at Varsity
+                            Store technologies
+                            about the laptop spec and within a day he fulfiled the delivery."</p>
+                        <h4>— Mbuso Mafuyeka., Computer Guardian</h4>
+                    </li>
+                    <li class="glide__slide testimonial-card">
+                        <p>"We rely on Varsity Store tech for high quality iPhone parts and expert guidance on
+                            unfamiliar technical
+                            challenges and trust me they'll always come through."</p>
+                        <h4>— Mpho M., Mobile Tech Experts </h4>
+                    </li>
+                    <li class="glide__slide testimonial-card">
+                        <p>"Varsity Store tech helped us to digitally launch our construction business and to scale it
+                            up
+                            by providing us with a proffesional web page and Consultation on how to combat our business'
+                            IT
+                            related challenges."</p>
+                        <h4>— Reatile Qekisi., Siyaphambili Global Services Pty Ltd</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Get In Touch With Us Today</h3>
+            <form onsubmit="event.preventDefault(); alert('Message sent!');">
+                <div class="form-row">
+                    <input type="text" placeholder="First Name" required />
+                    <input type="text" placeholder="Last Name" required />
+                </div>
+                <input type="email" placeholder="Your Email" required />
+                <input type="Phone" placeholder="Your Phone Number" required />
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <div class="form-row right-align">
+                    <button class="btn-simple" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+        <h2>Contact Us</h2>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <a href="https://www.google.com/maps/search/?api=1&query=278+Lilian+Ngoyi+Street,+Johannesburg"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="contact-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M12 21c-4-5-8-9-8-13a8 8 0 1116 0c0 4-4 8-8 13z" />
+                        <circle cx="12" cy="8" r="3" />
+                    </svg>
+                    278 Lilian Ngoyi Street, Johannesburg
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <a href="mailto:info@varsitystore.co.za">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="contact-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" ry="2" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    info@varsitystore.co.za
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <a href="tel:+27781635329">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="contact-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013 5.18 2 2 0 015 3h3a2 2 0 012 1.72 12.05 12.05 0 005.05 7.23A2 2 0 0116 13h3a2 2 0 012 1.92z" />
+                    </svg>
+                    +27 78 163 5329
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Company Info -->
+            <div class="footer-column">
+                <h4>Varsity Store</h4>
+                <p>Your Trusted Partner for Modern IT Solutions.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#Careers">Careers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="returns.html">Returns & Refunds</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Social Media -->
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1GcwLijmz1/?mibextid=wwXIfr" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/varsity_storeza?igsh=MThiNzMyYzZhZTk2Nw==" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@varsity_storeza?_t=ZS-8ybECiadGPh&_r=1" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/+27781635329" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Varsity Store Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollToTopBtn" title="Back to Top">↑</button>
+
+    <script src="script.js"></script>
+
+    <!-- Glide.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
+</body>
+
+</html>

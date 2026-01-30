@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT Supplies - Varsity Store</title>
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo-text">Varsity Store</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <button class="icon-btn"><i class="fas fa-search"></i></button>
+
+      <!-- Bag -->
+      <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+        <div class="cart-icon-wrapper">
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+      </a>
+
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Smart ICT Solutions for Your Business & Lifestyle</h1>
+      <p>
+        From the latest iPhones and laptops to reliable printers, chargers, and essential electronics, we supply
+        high-quality ICT products designed to keep you connected, productive, and ahead of the curve. Whether you’re
+        upgrading your office or enhancing your personal tech, we’ve got the right tools at the right price.
+      </p>
+    </div>
+  </section>
+
+
+
+
+  <!-- Supplies Grid -->
+  <main class="supplies-grid">
+
+    <a href="iphones.html" class="supply-card-link">
+      <div class="supply-card">
+        <img src="images/iphones.png" alt="iPhones" class="supply-img">
+        <div>
+          <h2>iPhones</h2>
+          <p>Latest Apple iPhones for business and personal use.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="laptops.html" class="supply-card-link">
+      <div class="supply-card">
+        <img src="images/Laptops.png" alt="Laptops" class="supply-img">
+        <div>
+          <h2>Laptops</h2>
+          <p>High-performance laptops for work, study, and gaming.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="electronics.html" class="supply-card-link">
+      <div class="supply-card">
+        <img src="images/monitor.png" alt="Electronics" class="supply-img">
+        <div>
+          <h2>Electronics</h2>
+          <p>Top-quality monitors, storage, and networking gear you can rely on.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="accessories.html" class="supply-card-link">
+      <div class="supply-card">
+        <img src="images/airpods.png" alt="Accessories" class="supply-img">
+        <div>
+          <h2>Accessories</h2>
+          <p>From chargers to headphones, everything to keep you connected.</p>
+        </div>
+      </div>
+    </a>
+
+    
+
+  </main>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Varsity Store Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>

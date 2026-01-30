@@ -1,0 +1,172 @@
+/* Hero */
+.hero {
+  background: var(--bg-dark) url('images/it-solutions-background.jpg') no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 60px 20px; /* reduced height */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+/* Overlay so text stays legible */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* you can tweak 0.5 darker or lighter */
+  z-index: 1;
+}
+
+/* Keep your current content styling, but make sure it's above the overlay */
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Your existing font styles unchanged */
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px; /* bigger, bolder */
+  font-weight: 600;
+  letter-spacing: -1px; /* gives that Apple sleek look */
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+
+
+/* Each Service Section */
+.service-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+}
+
+/* Service Card */
+.service-card {
+  text-align: center;
+  padding: 0;
+}
+
+.service-card h3 {
+  font-size: 2.2rem;
+  color: #fff; /* text stands out on dark background */
+  margin-bottom: 20px;
+}
+
+.service-card p {
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-size: 1.15rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Gallery for each service */
+.service-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px; /* space between images */
+  margin-bottom: 0;
+}
+
+.service-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Call-to-Action Section */
+.cta {
+  text-align: center;
+  background: #111;  /* keeps the dark background */
+  padding: 70px 20px;
+  margin: 80px 0 0;  /* top margin only */
+  border-radius: 0;  /* removed rounded corners */
+  box-shadow: none;  /* removed shadow */
+  width: 100%;       /* full width */
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.cta p {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+
+/* WhatsApp button in accent yellow with 90-degree rectangle shape */
+.btn-whatsapp-yellow {
+  display: inline-block;
+  background: #ffc107; /* accent yellow */
+  color: #111;
+  font-weight: bold;
+  padding: 16px 36px;
+  border-radius: 0; /* 90-degree rectangle */
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp-yellow:hover {
+  background: #e0a800;
+  transform: translateY(-3px);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 800px;
+  padding: 40px 20px;
+}
+
+.why-choose-us h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.why-choose-us ul {
+  list-style: disc;
+  padding-left: 40px;
+  text-align: left;
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+
+
+
+

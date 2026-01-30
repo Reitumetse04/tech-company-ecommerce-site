@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhones | Varsity Store</title>
+
+    <link rel="stylesheet" href="laptops.css">
+    <link rel="stylesheet" href="iphones.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar (reuse your shared one) -->
+    <header class="navbar">
+        <div class="logo-text">Varsity Store</div>
+        <nav>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                
+            </ul>
+        </nav>
+
+        <!-- Right Side Icons -->
+        <div class="nav-icons">
+            <!-- Search -->
+            <button class="icon-btn" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+            <!-- Bag -->
+            <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+                <div class="cart-icon-wrapper">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </a>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+    <section class="hero hero-small">
+        <h1>iPhones</h1>
+        <p>Shop Premium iPhones with us today, We offer Lay-Buy for up to 4 months & all iPhones comes with free accesories
+             (earphones, charging cable, screen protector & clear case) plus 3-months warranty for all our iPhones from
+              iPhone 6S up to iPhone 17ProMax. We deliver nation-wide (2-3 days) and in-store same day purchasing
+             experience at our physical location.</p>
+    </section>
+
+
+    <!-- iPhone Products Section -->
+    <section class="iphone-products">
+        <div class="products-grid">
+
+             <!-- Example Product Card (iPhone 17 Pro Max) -->
+            <div class="product-card">
+                <img src="images/iphone-17ProMax.png" alt="iPhone 17 Pro Max" class="product-image">
+                <h3>iPhone 17 Pro Max</h3>
+                <p class="product-price">R30 000</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 17 Pro Max" data-price="30000"
+                    data-image="images/iphone-16Pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 17 Pro) -->
+            <div class="product-card">
+                <img src="images/iphone-17Pro.png" alt="iPhone 17 Pro" class="product-image">
+                <h3>iPhone 17 Pro</h3>
+                <p class="product-price">R28 000</p>
+
+               
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 17 Pro" data-price="28000"
+                    data-image="images/iphone-17Pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 17 Air) -->
+            <div class="product-card">
+                <img src="images/iphone-17Air.png" alt="iPhone 17 Air" class="product-image">
+                <h3>iPhone 17 Air</h3>
+                <p class="product-price">25 000</p>
+
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 17 Air" data-price="25000"
+                    data-image="images/iphone-17Air.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 17) -->
+            <div class="product-card">
+                <img src="images/iphone-17.png" alt="iPhone 17" class="product-image">
+                <h3>iPhone 17</h3>
+                <p class="product-price">R20 000</p>
+
+               
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 17" data-price="20000"
+                    data-image="images/iphone-17.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 16ProMax) -->
+            <div class="product-card">
+                <img src="images/iphone_16-pro-max.png" alt="iPhone 16 ProMax" class="product-image">
+                <h3>iPhone 16ProMax</h3>
+                <p class="product-price">R26 800</p>
+
+             
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 16ProMax" data-price="26800"
+                    data-image="images/iphone-16-pro-max.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 16 Pro) -->
+            <div class="product-card">
+                <img src="images/iphone-16Pro.png" alt="iPhone 16 Pro" class="product-image">
+                <h3>iPhone 16 Pro</h3>
+                <p class="product-price">R24 600</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 16 Pro" data-price="24600"
+                    data-image="images/iphone-16Pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <!-- Example Product Card (iPhone 16) -->
+            <div class="product-card">
+                <img src="images/iphone-16.png" alt="iPhone 16" class="product-image">
+                <h3>iPhone 16</h3>
+                <p class="product-price">R16 800</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 16" data-price="16800"
+                    data-image="images/iphone-16.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            
+            <!-- Example Product Card (iPhone 15ProMax) -->
+            <div class="product-card">
+                <img src="images/iphone-15-pro-max.png" alt="iPhone 15ProMax" class="product-image">
+                <h3>iPhone 15ProMax</h3>
+                <p class="product-price">R18 500</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 15ProMax" data-price="18500"
+                    data-image="images/iphone-15-pro-max.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 15Pro) -->
+            <div class="product-card">
+                <img src="images/iphone-15-pro.png" alt="iPhone 15ProMax" class="product-image">
+                <h3>iPhone 15Pro</h3>
+                <p class="product-price">R16 800</p>
+
+               
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone iphone-15-pro" data-price="16800"
+                    data-image="images/iphone-15-pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 15) -->
+            <div class="product-card">
+                <img src="images/iphone-15.png" alt="iPhone 15" class="product-image">
+                <h3>iPhone 15P</h3>
+                <p class="product-price">R13 800</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone iphone-15" data-price="13800"
+                    data-image="images/iphone-15.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 14 Pro Max) -->
+            <div class="product-card">
+                <img src="images/iphone-14Promax.png" alt="iPhone 14 Pro Max" class="product-image">
+                <h3>iPhone 14 Pro Max</h3>
+                <p class="product-price">R16 000</p>
+
+               
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 14 Pro Max" data-price="16000"
+                    data-image="images/iphone-14Promax.png">
+                    Add to Cart
+                </button>
+            </div>
+
+
+         <!-- Example Product Card (iPhone 14 Pro) -->
+            <div class="product-card">
+                <img src="images/iphone-14-pro.png" alt="iPhone 14 Pro" class="product-image">
+                <h3>iPhone 14 Pro</h3>
+                <p class="product-price">R14 800</p>
+
+               
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 14 Pro" data-price="14800"
+                    data-image="images/iphone-14-pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <!-- Example Product Card (iPhone 14 Plus) -->
+            <div class="product-card">
+                <img src="images/iphone_14Plus.png" alt="iPhone 14 Plus" class="product-image">
+                <h3>iPhone 14 Plus</h3>
+                <p class="product-price">R10 800</p>
+
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 14 Plus" data-price="10800"
+                    data-image="images/iphone-14Plus.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 14 ) -->
+            <div class="product-card">
+                <img src="images/iphone-14.png" alt="iPhone 14" class="product-image">
+                <h3>iPhone 14</h3>
+                <p class="product-price">R10 400</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 14" data-price="10400
+                "
+                    data-image="images/iphone-14.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 13ProMax ) -->
+            <div class="product-card">
+                <img src="images/iphone-13-pro-max.png" alt="iPhone 13ProMax" class="product-image">
+                <h3>iPhone 13ProMax</h3>
+                <p class="product-price">R13 700</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 13ProMax" data-price="13700
+                "
+                    data-image="images/iphone-13-pro-max.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 13Pro ) -->
+            <div class="product-card">
+                <img src="images/iphone-13-pro.png" alt="iPhone 13Pro" class="product-image">
+                <h3>iPhone 13Pro</h3>
+                <p class="product-price">R11 350</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 13Pro" data-price="11350"
+                    data-image="images/iphone-13-pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 13) -->
+            <div class="product-card">
+                <img src="images/iphone-13.png" alt="iPhone 13" class="product-image">
+                <h3>iPhone 13</h3>
+                <p class="product-price">R8 700</p>
+
+               
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 13" data-price="8700"
+                    data-image="images/iphone-13.png">
+                    Add to Cart
+                </button>
+            </div>
+
+
+
+            <!-- Example Product Card (iPhone 12 Pro Max ) -->
+            <div class="product-card">
+                <img src="images/iphone-12Promax.png" alt="iPhone 12 Pro Max" class="product-image">
+                <h3>iPhone 12 Pro Max</h3>
+                <p class="product-price">R10 000</p>
+
+                
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 12 Pro Max" data-price="10000"
+                    data-image="images/iphone-12Promax.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 12 Pro) -->
+            <div class="product-card">
+                <img src="images/iphone-12Pro.png" alt="iPhone 12 Pro" class="product-image">
+                <h3>iPhone 12 Pro</h3>
+                <p class="product-price">R8 700</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 12 Pro" data-price="8700"
+                    data-image="images/iphone-16Pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 12) -->
+            <div class="product-card">
+                <img src="images/iphone-12.png" alt="iPhone 12" class="product-image">
+                <h3>iPhone 12</h3>
+                <p class="product-price">R6 700</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 12" data-price="6700"
+                    data-image="images/iphone-16Pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 11ProMax) -->
+            <div class="product-card">
+                <img src="images/iphone-11-pro-max.png" alt="iPhone 11ProMax" class="product-image">
+                <h3>iPhone 11ProMax</h3>
+                <p class="product-price">R7 400</p>
+
+               
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 11ProMax" data-price="7400"
+                    data-image="images/iphone-11-pro-max.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 11 Pro  ) -->
+            <div class="product-card">
+                <img src="images/iphone-11Pro.png" alt="iPhone 11 Pro" class="product-image">
+                <h3>iPhone 11 Pro</h3>
+                <p class="product-price">R6 900</p>
+
+               
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 11 Pro" data-price="6900"
+                    data-image="images/iphone-11Pro.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 11 ) -->
+            <div class="product-card">
+                <img src="images/iphone-11.png" alt="iPhone 11" class="product-image">
+                <h3>iPhone 11</h3>
+                <p class="product-price">R5 600</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 11" data-price="5600"
+                    data-image="images/iphone-11.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone XSMax) -->
+            <div class="product-card">
+                <img src="images/iphone-XSMax.png" alt="iPhone XS Max" class="product-image">
+                <h3>iPhone XS Max</h3>
+                <p class="product-price">R5 500</p>
+
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone XS Max" data-price="550O"
+                    data-image="images/iphone-XSMax.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone Xs ) -->
+            <div class="product-card">
+                <img src="images/iphone-xs.png" alt="iPhone Xs" class="product-image">
+                <h3>iPhone Xs</h3>
+                <p class="product-price">R4 500</p>
+
+              
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone XS" data-price="4500"
+                    data-image="images/iphone-xs.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone Xr ) -->
+            <div class="product-card">
+                <img src="images/iphone-xr.png" alt="iPhone Xr" class="product-image">
+                <h3>iPhone XR</h3>
+                <p class="product-price">R4 800</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone XR" data-price="4800"
+                    data-image="images/iphone-xr.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone se ) -->
+            <div class="product-card">
+                <img src="images/iphone-se.png" alt="iPhone SE" class="product-image">
+                <h3>iPhone SE</h3>
+                <p class="product-price">R4 250</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone SE" data-price="4250"
+                    data-image="images/iphone-se.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 8 Plus ) -->
+            <div class="product-card">
+                <img src="images/iphone-8-Plus.png" alt="iPhone 8 Plus" class="product-image">
+                <h3>iPhone 8 Plus</h3>
+                <p class="product-price">R4 100</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 8 Plus" data-price="4100"
+                    data-image="images/iphone-8-Plus.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 8) -->
+            <div class="product-card">
+                <img src="images/iphone-8.png" alt="iPhone 8" class="product-image">
+                <h3>iPhone 8</h3>
+                <p class="product-price">R3 000</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 8" data-price="3000"
+                    data-image="images/iphone-8.png">
+                    Add to Cart
+                </button>
+            </div>
+
+             <!-- Example Product Card (iPhone 7 Plus ) -->
+            <div class="product-card">
+                <img src="images/iphone_7_Plus.png" alt="iPhone 7 Plus" class="product-image">
+                <h3>iPhone 7 Plus</h3>
+                <p class="product-price">R3 000</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 7 Plus" data-price="3000"
+                    data-image="images/iphone_7_Plus.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 7 ) -->
+            <div class="product-card">
+                <img src="images/iphone-7.png" alt="iPhone 7" class="product-image">
+                <h3>iPhone 7</h3>
+                <p class="product-price">R2 300</p>
+
+               
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 7" data-price="2300"
+                    data-image="images/iphone-7.png">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Example Product Card (iPhone 6S ) -->
+            <div class="product-card">
+                <img src="images/iphone-6s.png" alt="iPhone 6s" class="product-image">
+                <h3>iPhone 6s</h3>
+                <p class="product-price">R2 000</p>
+
+                
+
+                <!-- Add to Cart Button -->
+                <button class="btn add-to-cart-btn" data-name="iPhone 6s" data-price="2000"
+                    data-image="images/iphone-6s.png">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Varsity Store Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="laptop.js"></script>
+
+</body>
+
+</html>

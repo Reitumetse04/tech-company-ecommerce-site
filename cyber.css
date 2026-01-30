@@ -1,0 +1,48 @@
+/* CYBER PAGE */
+
+/* Hero */
+.hero {
+  background: var(--bg-dark) url('images/cyber.jpeg') no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 60px 20px; /* reduced height */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.cyber-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.cyber-card {
+  background: var(--card-glass);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  color: var(--text-light);
+  backdrop-filter: blur(8px);
+}
+
+.cyber-card h2 {
+  color: var(--accent-gold);
+  margin-bottom: 10px;
+}
+
+.cyber-contact-cta {
+  text-align: center;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+}
+
+.cyber-contact-cta a {
+  color: var(--accent-gold);
+  text-decoration: none;
+}
+
+.cyber-contact-cta a:hover {
+  text-decoration: underline;
+}

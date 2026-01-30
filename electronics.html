@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics | Varsity Store</title>
+
+    <link rel="stylesheet" href="laptops.css">
+    <link rel="stylesheet" href="accessories.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar (reuse your shared one) -->
+    <header class="navbar">
+        <div class="logo-text">Varsity Store</div>
+        <nav>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                
+            </ul>
+        </nav>
+
+        <!-- Right Side Icons -->
+        <div class="nav-icons">
+            <!-- Search -->
+            <button class="icon-btn" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+            <!-- Bag -->
+            <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+                <div class="cart-icon-wrapper">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </a>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+    <section class="hero hero-small">
+        <h1>Electronics</h1>
+        <p>Power up your world with our range of cutting-edge electronics designed to make life smarter,
+            faster, and more connected. From sleek laptops and must-have accessories to the latest
+            high-tech gadgets, we bring you innovation that blends performance with style.
+            Upgrade your setup and experience technology that works as hard as you do.</p>
+    </section>
+
+
+
+   <!-- Electronics & Parts Grid -->
+    <main class="supplies-grid">
+        <!-- Example Electronics & Parts 1 -->
+        <div class="supply-card">
+            <img src="images/usb-mouse.png" alt="USB mouse" class="supply-img">
+            <div>
+                <h2>USB-Mouse</h2>
+                <span class="price">R160</span><br>
+                <button class="btn add-to-cart-btn" data-name="USB-C To Lightning Cable" data-price="160"
+                    data-image="images/usb-mouse.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+         <!-- Example Electronics & Parts 2 -->
+        <div class="supply-card">
+            <img src="images/usb-keyboard.png" alt="USB Keyboard" class="supply-img">
+            <div>
+                <h2>USB-Keyboard</h2>
+                <span class="price">R200</span><br>
+                <button class="btn add-to-cart-btn" data-name="USB-C To Lightning Cable" data-price="200"
+                    data-image="images/usb-keyboard.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+       
+
+        <!-- Example Electronics & Parts 3 -->
+        <div class="supply-card">
+            <img src="images/ram.png" alt="RAM" class="supply-img">
+            <div>
+                <h2>RAM</h2>
+                <span class="price">R400</span><br>
+                <button class="btn add-to-cart-btn" data-name="USB-C To Lightning Cable" data-price="400"
+                    data-image="images/ram.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+       <!-- Example Electronics & Parts 4 -->
+        <div class="supply-card">
+            <img src="images/portable-ssd.png" alt="Portable SSD & HDD" class="supply-img">
+            <div>
+                <h2>Portable SSD & HDD</h2>
+                <span class="price">R500</span><br>
+                <button class="btn add-to-cart-btn" data-name="USB-C To Lightning Cable" data-price="500"
+                    data-image="images/portable-ssd.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+         <!-- Example Electronics & Parts 5 -->
+        <div class="supply-card">
+            <img src="images/monitor.png" alt="Monitor" class="supply-img">
+            <div>
+                <h2>Monitor</h2>
+                <span class="price">R1500</span><br>
+                <button class="btn add-to-cart-btn" data-name="Monitor" data-price="1500"
+                    data-image="images/monitor.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Example Electronics & Parts 6-->
+        <div class="supply-card">
+            <img src="images/laptop-charger.png" alt="Laptop Charger" class="supply-img">
+            <div>
+                <h2>Laptop Charger</h2>
+                <span class="price">R400</span><br>
+                <button class="btn add-to-cart-btn" data-name="Laptop" data-price="400"
+                    data-image="images/laptop-charger.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Example Electronics & Parts 7 -->
+        <div class="supply-card">
+            <img src="images/iphone-speaker.png" alt="iPhone Speaker" class="supply-img">
+            <div>
+                <h2>iPhone Speaker</h2>
+                <span class="price">R300</span><br>
+                <button class="btn add-to-cart-btn" data-name="Monitor" data-price="300"
+                    data-image="images/iphone-speaker.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Example Electronics & Parts 8 -->
+        <div class="supply-card">
+            <img src="images/iphone-screen.png" alt="iPhone Screen" class="supply-img">
+            <div>
+                <h2>Monitor</h2>
+                <span class="price">R450</span><br>
+                <button class="btn add-to-cart-btn" data-name="iPhone Screen" data-price="450"
+                    data-image="images/iphone-speaker.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Example Electronics & Parts 9 -->
+        <div class="supply-card">
+            <img src="images/iphone-home-button.png" alt="iPhone Homebutton" class="supply-img">
+            <div>
+                <h2>iPhone Homebutton</h2>
+                <span class="price">R400</span><br>
+                <button class="btn add-to-cart-btn" data-name="Monitor" data-price="400"
+                    data-image="images/iphone-home-button.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Example Electronics & Parts 10 -->
+        <div class="supply-card">
+            <img src="images/iphone-charging-port.png" alt="iPhone Charging Port" class="supply-img">
+            <div>
+                <h2>iPhone Charging Port</h2>
+                <span class="price">R450</span><br>
+                <button class="btn add-to-cart-btn" data-name="Monitor" data-price="450"
+                    data-image="images/iphone-charging-port.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Example Electronics & Parts 11 -->
+        <div class="supply-card">
+            <img src="images/iphone-camera.png" alt="iPhone Camera" class="supply-img">
+            <div>
+                <h2>iPhone Camera</h2>
+                <span class="price">R350</span><br>
+                <button class="btn add-to-cart-btn" data-name="Monitor" data-price="350"
+                    data-image="images/iphone-camera.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Example Electronics & Parts 12 -->
+        <div class="supply-card">
+            <img src="images/iphone-battery.png" alt="iPhone Battery" class="supply-img">
+            <div>
+                <h2>iPhone Battery</h2>
+                <span class="price">R450</span><br>
+                <button class="btn add-to-cart-btn" data-name="iPhone Battery" data-price="450"
+                    data-image="images/iphone-battery.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Example Electronics & Parts 13 -->
+        <div class="supply-card">
+            <img src="images/canon-printer.png" alt="Canon Printer" class="supply-img">
+            <div>
+                <h2>Canon Printer</h2>
+                <span class="price">R1800</span><br>
+                <button class="btn add-to-cart-btn" data-name="Canon Printer" data-price="1800"
+                    data-image="images/canon-printer.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+
+
+        
+
+        
+        
+
+
+
+
+        </main>
+
+         <!-- Cart Popup -->
+   <div id="cart-popup" class="cart-popup hidden">
+      <p>Item added to your cart</p>
+      <div class="popup-product">
+        <img id="popup-img" src="" alt="">
+        <span id="popup-name"></span>
+      </div>
+      <div class="popup-actions">
+        <a href="cart.html" class="btn view-cart-btn">View Cart</a>
+        <button class="btn continue-btn" onclick="closePopup()">Continue Shopping</button>
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Varsity Store Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="laptop.js"></script>
+
+
+</body>
+
+</html>

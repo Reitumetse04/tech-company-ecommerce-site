@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Varsity Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css"> <!-- cart specific styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+     <!-- Navbar -->
+    <header class="navbar">
+        <!-- Logo -->
+        <div class="logo-text">Varsity Store</div>
+
+        <!-- Centered Nav Links -->
+        <nav>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right Side Icons -->
+        <div class="nav-icons">
+            <!-- Search -->
+            <button class="icon-btn" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+            <!-- Bag -->
+            <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+                <div class="cart-icon-wrapper">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </a>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+  <h1>Your Cart</h1>
+  <div id="cart-container"></div>
+
+  <div id="cart-summary" class="hidden">
+    <h3>Cart Total: <span id="cart-total">0</span></h3>
+    <button class="checkout-btn">Proceed to Checkout</button>
+    <a href="products.html" class="continue-shopping">← Continue Shopping</a>
+  </div>
+</main>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="returns.html">Returns & Refunds</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Varsity Store Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="laptop.js"></script>
+</body>
+
+</html>
+
+
+

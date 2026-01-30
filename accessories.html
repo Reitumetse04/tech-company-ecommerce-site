@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops | Varsity Store</title>
+
+    <link rel="stylesheet" href="laptops.css">
+    <link rel="stylesheet" href="accessories.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar (reuse your shared one) -->
+    <header class="navbar">
+        <div class="logo-text">Varsity Store</div>
+        <nav>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                
+            </ul>
+        </nav>
+
+        <!-- Right Side Icons -->
+        <div class="nav-icons">
+            <!-- Search -->
+            <button class="icon-btn" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+            <!-- Bag -->
+            <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+                <div class="cart-icon-wrapper">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </a>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+    <section class="hero hero-small">
+        <h1>Accessories</h1>
+        <p>Find the perfect accessories to protect, accessorize, and upgrade your device.</p>
+    </section>
+
+    <!-- Accessories Grid -->
+    <main class="supplies-grid">
+        <!-- Example Accessory 1 -->
+        <div class="supply-card">
+            <img src="images/USB-C-To-Lightning_cable.png" alt="USB-C To Lightning Cable" class="supply-img">
+            <div>
+                <h2>USB-C To Lightning Cable</h2>
+                <p>2 Meter
+                    For charging, transferring & syncing </p>
+                <span class="price">R120</span><br>
+                <button class="btn add-to-cart-btn" data-name="USB-C To Lightning Cable" data-price="120"
+                    data-image="images/USB-C-To-Lightning_cable.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="supply-card">
+            <img src="images/USB-To-Ligtning-cable.png" alt="USB To Lightning Cable" class="supply-img">
+            <div>
+                <h2>USB To Lightning Cable</h2>
+                <p>2 Meter
+                    For charging, transferring & syncing </p>
+                <span class="price">R100</span><br>
+                <button class="btn add-to-cart-btn" data-name="USB To Lightning Cable" data-price="100"
+                    data-image="images/USB-To-Ligtning-cable.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="supply-card">
+            <img src="images/USB-C-To-USB-C-cable.png" alt="USB-C To USB-C Cable" class="supply-img">
+            <div>
+                <h2>USB-C To USB-C Cable</h2>
+                <p>2 Meter
+                    For charging, transferring & syncing </p>
+                <span class="price">R120</span><br>
+                <button class="btn add-to-cart-btn" data-name="USB-C To USB-C Cable" data-price="120"
+                    data-image="images/USB-C-To-USB-C-cable.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+<div class="supply-card">
+  <img src="images/P9-Wireless-headphones.png" alt="P9 Wireless Headphones" class="supply-img">
+  <div>
+    <h2>P9 Wireless Headphones</h2>
+    <p>Supports: Bluetooth, SD card & Aux cable.
+    </p>
+    <span class="price">R200</span><br>
+
+    <!-- Color Options -->
+    <div class="color-options">
+      <span class="color-swatch" data-color="Black" style="background:black;"></span>
+      <span class="color-swatch" data-color="Pink" style="background:pink;"></span>
+      <span class="color-swatch" data-color="Blue" style="background:blue;"></span>
+      <span class="color-swatch" data-color="Green" style="background:green;"></span>
+      <span class="color-swatch" data-color="Silver" style="background:silver; border:1px solid #ccc;"></span>
+    </div>
+
+    <button class="btn add-to-cart-btn" 
+      data-name="P9 Wireless Headphones" 
+      data-price="200"
+      data-image="images/P9-Wireless-headphones.png">
+      Add to Cart
+    </button>
+  </div>
+</div>
+
+
+        <div class="supply-card">
+            <img src="images/Airpods_Pro.png" alt="AirPods Pro" class="supply-img">
+            <div>
+                <h2>AirPods Pro</h2>
+                <p>Bluetooth
+                    Adaptive EQ
+                    Sensors
+                    Built in microphone </p>
+                <span class="price">R400</span><br>
+                <button class="btn add-to-cart-btn" data-name="AirPods Pro" data-price="400"
+                    data-image="images/Airpods_Pro.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="supply-card">
+            <img src="images/25W_USB_C_Adapter.png" alt="25W USB c adapter " class="supply-img">
+            <div>
+                <h2>25W USB c adapter </h2>
+                <p>Fast charging
+                    Built-in smart chip protection for safety, to prevent overheating / overcharging and short circuit
+                </p>
+                <span class="price">R120</span><br>
+                <button class="btn add-to-cart-btn" data-name="25W USB c adapter " data-price="120"
+                    data-image="images/25W_USB_C_Adapter.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="supply-card">
+            <img src="images/earpods-lightning_connector.png" alt="EarPods Lightning Connector " class="supply-img">
+            <div>
+                <h2>EarPods Lightning Connector </h2>
+                <p>Crystal clear sound with long battery life. </p>
+                <span class="price">R150</span><br>
+                <button class="btn add-to-cart-btn" data-name="EarPods Lightning Connector " data-price="150"
+                    data-image="images/earpods-lightning_connector.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="supply-card">
+            <img src="images/earpods-USB-C.png" alt="EarPods USB-C" class="supply-img">
+            <div>
+                <h2>EarPods USB-C</h2>
+                <p>Crystal clear sound with long battery life. </p>
+                <span class="price">R150</span><br>
+                <button class="btn add-to-cart-btn" data-name="EarPods USB-C" data-price="150"
+                    data-image="images/earpods-USB-C.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="supply-card">
+            <img src="images/earpods-headphones-plug.png" alt="EarPods Headphone plug" class="supply-img">
+            <div>
+                <h2>EarPods Headphone plug</h2>
+                <p>Crystal clear sound with long battery life. </p>
+                <span class="price">R150</span><br>
+                <button class="btn add-to-cart-btn" data-name="EarPods Headphone plug" data-price="150"
+                    data-image="images/earpods-headphones-plug.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <div class="supply-card">
+            <img src="images/clear-case.png" alt="Clear Case" class="supply-img">
+            <div>
+                <h2>Clear Case</h2>
+                <p>Clear and minimalist phone case that fits perfectly, offering protection without compromising style.
+                </p>
+                <span class="price">R120</span><br>
+                <button class="btn add-to-cart-btn" data-name="Clear Case" data-price="120"
+                    data-image="images/clear-case.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="supply-card">
+            <img src="images/MagSafe-clear-case.png" alt="MagSafe Clear Case" class="supply-img">
+            <div>
+                <h2>MagSafe Clear Case</h2>
+                <p>Clear and minimalist phone case that fits perfectly, offering protection without compromising style.
+                </p>
+                <span class="price">R150</span><br>
+                <button class="btn add-to-cart-btn" data-name="MagSafe Clear Case" data-price="150"
+                    data-image="images/MagSafe-clear-case.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="supply-card">
+            <img src="images/Tempered-glass-screen.png" alt="Tempered glass screen protector " class="supply-img">
+            <div>
+                <h2>Tempered glass screen protector </h2>
+                <p>High quality glass-screen protector that provides crystal clear quality. </p>
+                <span class="price">R120</span><br>
+                <button class="btn add-to-cart-btn" data-name="Tempered glass screen protector " data-price="120"
+                    data-image="images/Tempered-glass-screen.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <!-- Cart Popup -->
+   <div id="cart-popup" class="cart-popup hidden">
+      <p>Item added to your cart</p>
+      <div class="popup-product">
+        <img id="popup-img" src="" alt="">
+        <span id="popup-name"></span>
+      </div>
+      <div class="popup-actions">
+        <a href="cart.html" class="btn view-cart-btn">View Cart</a>
+        <button class="btn continue-btn" onclick="closePopup()">Continue Shopping</button>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Varsity Store Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="laptop.js"></script>
+
+
+</body>
+
+</html>
