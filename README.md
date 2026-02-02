@@ -67,6 +67,4 @@ css/
 js/
 images/
 
-## Screenshots
-![Homepage](images/vs-store.png)
 
