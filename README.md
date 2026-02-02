@@ -8,7 +8,7 @@ This project was built to demonstrate my practical skills in HTML, CSS, and Java
 The website simulates a real online store experience, including product catalogs, a shopping cart system, and service pages tailored for a technology consulting business.
 
 ## Live Demo
-🔗 https://reitumetse04.github.io/repository-name/
+🔗 https://reitumetse04.github.io/tech-company-ecommerce-site/
 
 ## Features
 - Fully responsive design (mobile, tablet, desktop)
